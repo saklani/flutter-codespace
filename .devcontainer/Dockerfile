@@ -3,7 +3,7 @@ FROM ubuntu:latest
 RUN apt update 
 RUN apt install -y wget curl git xz-utils zip unzip --no-install-recommends 
 
-RUN	apt-get -y autoremove 
+RUN apt-get -y autoremove 
 RUN apt-get -y clean
 RUN rm -rf /var/lib/apt/lists/* 
 
