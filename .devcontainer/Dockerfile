@@ -1,8 +1,11 @@
 FROM ubuntu:latest
 
+ENV LC_ALL=en_US.UTF-8
+ENV LANG=en_US.UTF-8
+
 # Installing packages needed to run and install flutter
 RUN apt update 
-RUN apt install -y wget curl git xz-utils zip unzip --no-install-recommends 
+RUN apt install -y wget curl git xz-utils zip unzip ca-certificates --no-install-recommends 
 
 # Cleaning up unnecessary dependencies
 RUN	apt-get -y autoremove 
