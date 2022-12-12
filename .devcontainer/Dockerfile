@@ -13,7 +13,7 @@ WORKDIR /home/vscodespace
 ENV FLUTTER_CHANNEL="stable"
 ENV FLUTTER_VERSION="3.3.9"
 ENV FLUTTER_HOME=/home/vscodespace/flutter
-ENV PATH=${PATH}:/home/vscodespace/${FLUTTER_HOME}/bin
+ENV PATH=${PATH}:${FLUTTER_HOME}/bin
 ENV PUB_CACHE=/home/vscodespace/.pub_cache
 
 
