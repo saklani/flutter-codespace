@@ -1,0 +1,8 @@
+{
+	"name": "minimal-flutter",
+	"dockerFile": "Dockerfile",
+	"extensions": [
+		"dart-Code.dart-code",
+		"dart-Code.flutter"
+	]
+}
